@@ -1,0 +1,27 @@
+{
+  "name": "vrkbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^11.0.0",
+    "erlpack": "github:hammerandchisel/erlpack",
+    "node-opus": "^0.2.4",
+    "opusscript": "0.0.2",
+    "uws": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarbleSync/vrkbot.git"
+  },
+  "author": "warblesync",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarbleSync/vrkbot/issues"
+  },
+  "homepage": "https://github.com/WarbleSync/vrkbot#readme"
+}
