@@ -24,4 +24,4 @@ jspm_packages/
 
 # Misc
 .DS_Store
-.credentials.js
+config.json
