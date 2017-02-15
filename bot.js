@@ -3,10 +3,13 @@ const client = new Discord.Client();
 const config = require('./config.json');
 
 client.on('ready', () => {
-  console.log('I am ready and logged in as ' + config.botName);
-  client.user.setUsername('Virkle');
+  console.log('I am ready and logged in as ' + config.name);
+  client.user.setUsername(config.name);
   let guild = client.guilds.find("name", "Virtual Reality Killers");
-  let welcome = client.channels.find("name", "welcome");
+  let welcome = guild.channels.find("name", "welcome");
+  let welcomeMsg = guild.channels.find("name", "welcome").messages;
+  console.log(welcomeMsg)
+  // welcome.bulkDelete(welcomeMsg);
 });
 
 client.on('message', message => {
@@ -24,4 +27,4 @@ client.on("guildMemberAdd", (member) => {
   member.guild.defaultChannel.sendMessage(`"${member.user.username}" has joined this server`);
 });
 
-client.login(config.botSercret);
+client.login(config.token);
